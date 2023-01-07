@@ -4,11 +4,12 @@ import {
   TableBody,
   TableHeadCell,
 } from './TransactionHistoryTable.styled';
+import { TitleBetweenTasks } from '../../App/App.styled';
 
 export const TransactionHistoryTable = ({ data, title }) => {
   return (
     <>
-      <h2>{title}</h2>
+      <TitleBetweenTasks>{title}</TitleBetweenTasks>
       <Table>
         <thead>
           <tr>

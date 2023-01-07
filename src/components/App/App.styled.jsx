@@ -10,3 +10,7 @@ export const Container = styled.div`
 export const Title = styled.h2`
   margin: 0 0 10px 0;
 `;
+
+export const TitleBetweenTasks = styled.h2`
+  margin: 80px 0 10px 0;
+`;

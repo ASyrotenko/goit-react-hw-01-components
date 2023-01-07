@@ -1,11 +1,12 @@
 import { StatisticItem } from '../StaticItem/StatisticItem';
 import { StaticContainer, StaticList } from './StaticList.styled';
 import { getRandomHexColor } from '../../../utils/getRandomColor';
+import { TitleBetweenTasks } from '../../App/App.styled';
 
 export const StatisticsList = ({ stats, sectionTitle, title }) => {
   return (
     <>
-      <h2>{title}</h2>
+      <TitleBetweenTasks>{title}</TitleBetweenTasks>
       <StaticContainer>
         {sectionTitle && <h3 className="title">{sectionTitle}</h3>}
 
