@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { FriendListItem } from '../FriendListItem/FriendListItem';
 import { FriendsList } from './FriendList.styled';
 import { TitleBetweenTasks } from '../../App/App.styled';
@@ -18,4 +19,16 @@ export const FriendList = ({ friends, title }) => {
       </FriendsList>
     </>
   );
+};
+
+FriendList.propTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.exact({
+      name: PropTypes.string.isRequired,
+      avatar: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+    })
+  ),
+  title: PropTypes.string.isRequired,
 };
