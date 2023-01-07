@@ -21,6 +21,7 @@ export const App = () => {
         followers={followers}
         views={views}
         likes={likes}
+        title="1 - Social network profile"
       />
     </Container>
   );
