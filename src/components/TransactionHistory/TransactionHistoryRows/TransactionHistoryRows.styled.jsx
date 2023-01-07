@@ -10,7 +10,7 @@ export const TableСell = styled.td`
 export const TableRow = styled.tr`
   border: 1px gray solid;
 
-  :nth-child(even) {
+  :nth-of-type(even) {
     background-color: #e6e6e6;
   }
 `;
