@@ -9,8 +9,4 @@ export const StaticItem = styled.li`
   background-color: ${props => {
     return props.bgcolor;
   }};
-
-  :not(:last-child) {
-    border-right: 1px black solid;
-  }
 `;
