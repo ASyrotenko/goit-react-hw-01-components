@@ -5,12 +5,10 @@ import {
   TableBody,
   TableHeadCell,
 } from './TransactionHistoryTable.styled';
-import { TitleBetweenTasks } from '../../App/App.styled';
 
-export const TransactionHistoryTable = ({ data, title }) => {
+export const TransactionHistoryTable = ({ data }) => {
   return (
     <>
-      <TitleBetweenTasks>{title}</TitleBetweenTasks>
       <Table>
         <thead>
           <tr>
@@ -46,5 +44,4 @@ TransactionHistoryTable.propTypes = {
       currency: PropTypes.string.isRequired,
     })
   ),
-  title: PropTypes.string.isRequired,
 };

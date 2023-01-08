@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 
 export const Table = styled.table`
   border-collapse: collapse;
+  margin-top: 40px;
 `;
 
 export const TableHeadCell = styled.th`

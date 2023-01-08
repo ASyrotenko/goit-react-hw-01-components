@@ -15,11 +15,9 @@ export const Profile = ({
   followers,
   views,
   likes,
-  title,
 }) => {
   return (
     <>
-      <Title>{title}</Title>
       <ProfileCard>
         <ProfileDescription>
           <img src={avatar} alt={username} className="avatar" />
@@ -55,5 +53,4 @@ Profile.propTypes = {
   followers: PropTypes.number.isRequired,
   views: PropTypes.number.isRequired,
   likes: PropTypes.number.isRequired,
-  title: PropTypes.string.isRequired,
 };

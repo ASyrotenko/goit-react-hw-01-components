@@ -2,14 +2,12 @@ import PropTypes from 'prop-types';
 import { StatisticItem } from '../StaticItem/StatisticItem';
 import { StaticContainer, StaticList } from './StaticList.styled';
 import { getRandomHexColor } from '../../../utils/getRandomColor';
-import { TitleBetweenTasks } from '../../App/App.styled';
 
-export const StatisticsList = ({ stats, sectionTitle, title }) => {
+export const StatisticsList = ({ stats, title }) => {
   return (
     <>
-      <TitleBetweenTasks>{title}</TitleBetweenTasks>
       <StaticContainer>
-        {sectionTitle && <h3 className="title">{sectionTitle}</h3>}
+        {title && <h3 className="title">{title}</h3>}
 
         <StaticList>
           {stats.map(({ id, label, percentage }) => {
@@ -37,5 +35,4 @@ StatisticsList.propTypes = {
     })
   ),
   sectionTitle: PropTypes.string,
-  title: PropTypes.string.isRequired,
 };
