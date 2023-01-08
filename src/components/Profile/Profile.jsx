@@ -5,7 +5,6 @@ import {
   ProfileStats,
   ProfileStatsItem,
 } from './Profile.styled';
-import { Title } from '../App/App.styled';
 
 export const Profile = ({
   username,
