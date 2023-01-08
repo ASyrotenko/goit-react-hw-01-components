@@ -7,7 +7,7 @@ export const StatisticsList = ({ stats, title }) => {
   return (
     <>
       <StaticContainer>
-        {title && <h3 className="title">{title}</h3>}
+        {title && <h3>{title}</h3>}
 
         <StaticList>
           {stats.map(({ id, label, percentage }) => {
